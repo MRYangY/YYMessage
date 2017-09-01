@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yymessage"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tubiao"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.yymessage.ui.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.yymessage.ui.activity.ConversationDetailActivity"
+            android:windowSoftInputMode="stateUnspecified|adjustResize"></activity>
+        <activity android:name="com.example.yymessage.ui.activity.NewMsgActivity"></activity>
+        <activity android:name="com.example.yymessage.ui.activity.GroupDetailActivity"></activity>
+        <receiver android:name="com.example.yymessage.receiver.SendSmsReceiver">
+            <intent-filter >
+                <action android:name="com.example.yymessage.sendsms"/>
+                </intent-filter>
+        </receiver>
+        <provider android:name="com.example.yymessage.provider.GroupProvider"
+            android:exported="true"
+            android:authorities="com.example.yymessage"></provider>
+    </application>
+
+</manifest>

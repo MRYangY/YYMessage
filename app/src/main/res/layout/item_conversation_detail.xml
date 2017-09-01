@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/tv_conversation_detail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:56am"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_conversat_detail_date"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+    <TextView 
+        android:id="@+id/tv_conversation_detail_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_receive_sms"
+        android:text="火"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:minWidth="70dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        />
+    <TextView 
+        android:id="@+id/tv_conversation_detail_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_send_sms"
+        android:text="火"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:minWidth="70dp"
+        android:layout_gravity="right"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>
