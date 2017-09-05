@@ -1,5 +1,7 @@
 # YYMessage
-Android短信应用
+Android短信应用  
+APP下载地址：http://pan.baidu.com/s/1miShSoS  
+
 
 展示效果图如下：  
 ![image](https://github.com/MRYangY/YYMessage/blob/master/app/src/main/res/drawable-xxhdpi/yy1.png)
